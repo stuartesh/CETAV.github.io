@@ -1,0 +1,718 @@
+/* =========== Fonts =========== */
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand-regular/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-regular/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-regular/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand-regular/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-regular/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold/quicksand-bold-webfont.eot');
+    src: url('../fonts/quicksand-bold/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-bold/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-bold/quicksand-bold-webfont.woff') format('woff'),
+         url('../fonts/quicksand-bold/quicksand-bold-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-bold/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'palanquin_darkregular';
+    src: url('../fonts/palanquindark-regular/palanquindark-regular-webfont.eot');
+    src: url('../fonts/palanquindark-regular/palanquindark-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.woff2') format('woff2'),
+         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.woff') format('woff'),
+         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.ttf') format('truetype'),
+         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.svg#palanquin_darkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html{
+	box-sizing:border-box;
+	color: #848286;
+	font-family: "Quicksand" sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "palanquindark-regular" sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 70px;
+}
+
+h2{
+	color: 
+	font-size: 48px;
+}
+
+h3{
+	font-size: 32px;
+}
+
+h4{
+	font-size: 24px;
+}
+
+h5{
+	font-size: 16px;
+}
+
+h6{
+	font-size: 12px;
+}
+
+ul li {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px
+}
+
+
+nav ul li:last-child{
+	margin-right: 0;
+}
+
+section{
+	padding: 70px 0;
+}
+
+.max-content{
+	margin: 0 auto;
+	max-width: 1000px;
+	overflow: auto;
+}
+
+.section-title{
+	color: #ff8f00;
+	display: inline-block;
+	font-family: "Raleway" sans-serif;
+	font-size: 48px;
+	margin-top: 15px;
+	width: 50%;
+}
+
+/* =========== RS ICONS =========== */
+.face-icon{
+	background: url(../img/logos/face-icon.png) no-repeat;
+	background-size: 100% auto;
+	height: 50px; 
+	text-indent: -9999px;
+	width: 50px;
+}
+
+.vimeo-icon{
+	background: url(../img/logos/vimeo-icon.png) no-repeat;
+	background-size: 100% auto;
+	height: 50px; 
+	text-indent: -9999px;
+	width: 50px;
+}
+
+/* =========== Header =========== */
+header{
+	background: url(../img/developer1.jpg) no-repeat center;
+ 	background-size: cover;
+	height: 700px;
+}
+
+.logo-cetav{
+	float: left;
+	background: url(../img/logos/logo-cetav.png) no-repeat center;
+	background-size: contain;
+	height: auto;
+	text-indent: -9999px;
+	width: 120px;
+}
+
+.top-header{
+  	background: rgba(244,244,244,0.95);
+	height: 85px;
+	padding-top:10px;
+	position: fixed;
+  	width: 100%;
+  	z-index: 5;
+}
+
+/* =========== Nav =========== */
+nav ul li a {
+	color: #848286;
+}
+
+nav ul li a:hover {
+	border-bottom: 1px solid;
+	font-weight: bold;
+}
+
+.drop-down{
+	background: rgba(29,29,29,0.85);
+	display: none;
+	transition:;
+	padding: 20px 0;
+	position: absolute;
+}
+
+.drop-down li{
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 6%;
+}
+
+.drop-down li a {
+	color: #ddd;
+}
+
+.main-nav {
+	font-size: 16px;	
+}
+
+.main-nav li:hover .drop-down{
+	display: block;
+}
+
+.nav-content{
+	display: inline-block;
+	float: right;
+}
+
+.secundary-nav{
+	font-size: 14px;
+}
+
+.search-icon{
+	height: 16px;
+	width: 16px;
+}
+
+/* =========== Content Header =========== */
+.content-header{
+	padding-top: 17.5%;
+}
+
+.rw-sentence{
+	margin: 0;
+	text-align: center;
+}
+
+.rw-sentence {
+	color: #292929;
+	font-size: 200%;
+	font-weight: normal;
+}
+
+.rotative-words span{
+	font-size: 70px;
+	position: absolute;
+	opacity: 0;
+	left: 36.63%;
+	color: #292929;
+	line-height: 120px;
+	-webkit-animation: rotateWord 12s linear infinite 0s;
+	-ms-animation: rotateWord 12s linear infinite 0s;
+	animation: rotateWord 12s linear infinite 0s;
+}
+
+.rotative-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+	-ms-animation-delay: 3s; 
+	animation-delay: 3s; 
+	color: #292929;
+}
+.rotative-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+	-ms-animation-delay: 6s; 
+	animation-delay: 6s; 
+	color: #292929;	
+}
+
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateX(-30px); }
+	5% { opacity: 1; -webkit-transform: translateX(0px);}
+    17% { opacity: 1; -webkit-transform: translateX(0px); }
+	20% { opacity: 0; -webkit-transform: translateX(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateX(-30px); }
+	5% { opacity: 1; -ms-transform: translateX(0px);}
+    17% { opacity: 1; -ms-transform: translateX(0px); }
+	20% { opacity: 0; -ms-transform: translateX(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateX(-30px); transform: translateX(-30px); }
+	5% { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px);}
+    17% { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+	20% { opacity: 0; -webkit-transform: translateX(30px); transform: translateX(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* =========== Block courses =========== */
+
+.list-courses {
+    padding: 0;
+    margin: 0;
+}
+
+.course{
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+    margin: 30px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    perspective: 800;
+    position: relative;
+}
+
+.course_container {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.course_container:hover {
+    transform: rotateY(180deg);
+}
+
+.side {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.back {
+    background: #eee;
+    color: #0087cc;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.sub_title {
+
+    font-size: 28px;
+    color: white;
+}
+
+.sub_title_course {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+/*side animation*/
+.side_animation {
+    background-color: #cc6220;
+    color: #cc6220;
+}
+
+.text_animation {
+    font-size: 18px;
+
+    color: #cc6220;
+    padding: 0 15px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.clear_btn {
+    text-align: center;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+}
+
+.btn_animation {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #cc6220;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    padding: 12px 67px 12px 67px;
+    margin: 0 auto;
+    border: 1px solid #cc6220;
+}
+
+.btn_animation:hover {
+    background-color: #cc6220;
+    color: white;
+}
+
+/*side web*/
+.side_web {
+    background-color: #922716;
+}
+
+.text_web {
+    font-size: 18px;
+
+    color: #922716;
+    padding: 0 15px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.btn_web {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #922716;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    padding: 12px 67px 12px 67px;
+    margin: 0 auto;
+    border: 1px solid #922716;
+}
+
+.btn_web:hover {
+    background-color: #922716;
+    color: white;
+}
+
+/*side post*/
+.side_post {
+    background-color: #819535;
+}
+
+.text_post {
+    font-size: 18px;
+
+    color: #819535;
+    padding: 0 15px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.btn_post {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #819535;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    padding: 12px 67px 12px 67px;
+    margin: 0 auto;
+    border: 1px solid #819535;
+}
+
+.btn_post:hover {
+    background-color: #819535;
+    color: white;
+}
+
+
+/* =========== Free Courses =========== */
+.free-courses {
+    width: 100%;
+    height: 465px;
+    margin: 30px 0;
+    padding: 0;
+    background: url(../img/curso1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+.background_opacity {
+    width: 100%;
+    height: 465px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+/*descriton free courses*/
+.title_free_courses {
+    color: white;
+    padding: 30px 0 10px;
+    width: 100%;
+}
+
+.content_free_courses {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.description_free_courses {
+    width: 50%;
+    display: inline-block;
+}
+
+.description_free_courses .section-title{
+	color: #fff;
+	width: 100%;
+}
+
+.text_course_description {
+    font-size: 18px;
+    font-family: 'quicksandregular';
+    color: white;
+}
+
+.clear {
+    width: 293px;
+    margin: 50px 0;
+}
+
+.btn {
+    font-family: 'quicksandbold';
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #00c9ed;
+}
+
+.btn:hover {
+    background-color: #00c9ed;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn_course_1 {
+    padding: 12px 67px 12px 67px;   
+}
+
+.btn_course_2 {
+    padding: 12px 33px 12px 33px;
+}
+
+/*list free courses*/
+.content_new_courses {
+    float: right;
+    width: 347px;
+    height: 465px;
+    background-color: rgba(0, 0, 0, 0.60);
+    color: white;
+    font-size: 18px;
+}
+
+.list_free_courses {
+    padding: 0;
+    
+}
+
+.course_item {
+    width: 86%;
+    list-style: none;
+    margin: 30px auto;
+}
+
+.course_item hr {
+    margin-top: 30px;
+    border: 0;
+    border-top: 1px solid #c1c3c2;
+}
+
+.read_more {
+    color: #fff;
+    font-family: 'quicksandbold';
+    text-decoration-line: underline;
+    text-decoration-color: #00c9ed;
+}
+
+.read_more:hover {
+    color: #00c9ed;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* =========== Free Courses =========== */
+.service {
+    width: 100%;
+    height: 360px;
+    margin: 30px 0;
+}
+
+.background_opacity_service {
+    background-color: rgba(0, 0, 0, 0.30);
+    width: 100%;
+    height: 360px;
+}
+
+/*estudio de audio*/
+.service_audio {
+    background-image: url(../img/audio.jpg);
+    background-size: cover;
+}
+
+.info_services {
+    width: 420px;
+    height: 360px;
+    padding-left: 30px;
+    color: white;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.sub_title_service {
+	font-family: 'quicksandregular';
+    margin: 30px 0 15px 0;
+}
+
+.info_services p {
+    font-family: 'quicksandregular';
+    font-size: 18px;
+    width: 80%;
+    margin: 0 0 85px;
+}
+
+.btn_service {
+    padding: 12px 67px 12px 67px;
+}
+
+/*estudio de render*/
+.service_render {
+    background-image: url(../img/render.jpg);
+    background-size: cover;
+}
+
+/* =========== Aliados =========== */
+
+.aliados{
+	background: #f9f9f9;
+}
+
+.aliados ul{
+	padding-left: 0;
+}
+
+.info-section{
+	float: right;
+	font-size: 18px;
+	width: 50%;
+}
+
+.logos-aliados{
+	margin-top: 60px;
+}
+
+.logos-aliados li{
+	display: inline-block;
+	height: 90px;
+	margin-top: 60px;
+	padding-right: 30px;
+	text-indent: -9999px;
+	width: 19.5%;
+}
+
+.logoAnimacion{
+	background: url(../img/logos/logo-animation.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoCamtic{
+	background: url(../img/logos/logo-camtic.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoCenfotec{
+	background: url(../img/logos/logo-cenfotec.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoIna{
+	background: url(../img/logos/logo-ina.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoEmpleate{
+	background: url(../img/logos/logo-empleate.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoMtss{
+	background: url(../img/logos/logo-mtss.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoGeek{
+	background: url(../img/logos/logo-geek.png) no-repeat center;
+	background-size: contain;
+}
+
+.logoComunidad{
+	background: url(../img/logos/logo-comunidad.png) no-repeat center;
+	background-size: contain;
+}
+
+/* 	***	Footer  ***	*/
+footer{
+	background: #292929;
+	color: #f4f4f4;
+	padding: 30px 0;
+}
+
+footer h5{
+	border-bottom: 1px solid #ff8f00;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+}
+
+.footer-info div{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+
+.icons-rs{
+	padding-left: 0;
+}
+
+.logo-parque{
+	height: auto;
+	width: 30%;
+}
+
+
+
