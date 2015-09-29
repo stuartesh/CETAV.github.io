@@ -22,21 +22,8 @@
          url('../fonts/quicksand-bold/quicksand-bold-webfont.svg#quicksandbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-
-@font-face {
-    font-family: 'palanquin_darkregular';
-    src: url('../fonts/palanquindark-regular/palanquindark-regular-webfont.eot');
-    src: url('../fonts/palanquindark-regular/palanquindark-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.woff2') format('woff2'),
-         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.woff') format('woff'),
-         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.ttf') format('truetype'),
-         url('../fonts/palanquindark-regular/palanquindark-regular-webfont.svg#palanquin_darkregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body, html{
 	box-sizing:border-box;
@@ -51,7 +38,7 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "palanquindark-regular" sans-serif;
+	font-family: "Raleway" sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -148,12 +135,13 @@ header{
 }
 
 .top-header{
-  	background: rgba(244,244,244,0.95);
+  	background: rgba(255,255,255,1);
 	height: 85px;
 	padding-top:10px;
 	position: fixed;
   	width: 100%;
   	z-index: 5;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.12);
 }
 
 /* =========== Nav =========== */
@@ -199,6 +187,7 @@ nav ul li a:hover {
 
 .secundary-nav{
 	font-size: 14px;
+    text-align: right;
 }
 
 .search-icon{
@@ -275,6 +264,45 @@ nav ul li a:hover {
     100% { opacity: 0; }
 }
 
+/* =========== Block initial text =========== */
+
+.text_intro {
+    background-color: #F9F9F9;
+    height: 220px;
+}
+
+.main_title {
+    width: 50%;
+    display: inline-block;
+}
+
+.title_intro {
+    width: 100%;
+}
+
+.main_text {
+    width: 50%;
+    float: right;
+}
+
+
+.main_text p{
+    margin-top: 35px;
+}
+
+.read_more_about {
+    color: #848286;
+    font-family: 'quicksandbold';
+    float: right;
+    margin-top: 30px;
+    border-bottom: 2px solid #FF8F00;
+}
+
+.read_more_about:hover {
+    color: #FF8F00;
+}
+
+
 /* =========== Block courses =========== */
 
 .list-courses {
@@ -335,7 +363,7 @@ nav ul li a:hover {
 .sub_title_course {
     text-align: center;
     position: relative;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
 }
 
@@ -556,6 +584,7 @@ nav ul li a:hover {
     font-family: 'quicksandbold';
     text-decoration-line: underline;
     text-decoration-color: #00c9ed;
+    border-bottom: 2px solid #00c9ed;
 }
 
 .read_more:hover {
@@ -695,7 +724,7 @@ footer{
 
 footer h5{
 	border-bottom: 1px solid #ff8f00;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	padding-bottom: 3px;
 }
 
@@ -709,10 +738,26 @@ footer h5{
 	padding-left: 0;
 }
 
+.login ul{
+    margin-top: 60px;
+    padding-left: 0;
+}
+
+.login ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+
+.login ul li:first-child{
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+}
+
 .logo-parque{
 	height: auto;
 	width: 30%;
 }
+
 
 
 
