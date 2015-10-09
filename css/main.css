@@ -146,20 +146,20 @@ header{
 
 /* =========== Nav =========== */
 nav ul li a {
-	color: #848286;
+	color: rgb(68, 68, 68);
 }
 
 nav ul li a:hover {
 	border-bottom: 1px solid;
-	font-weight: bold;
 }
 
 .drop-down{
 	background: rgba(29,29,29,0.85);
 	display: none;
-	transition:;
 	padding: 20px 0;
 	position: absolute;
+    font-size: 0.9em;
+    font-weight: normal;
 }
 
 .drop-down li{
@@ -168,12 +168,19 @@ nav ul li a:hover {
   padding-left: 6%;
 }
 
-.drop-down li a {
-	color: #ddd;
+.drop-down li a{
+  color: #fff;
+}
+
+.drop-down li a:hover {
+	color: #00c9ed;
+    
 }
 
 .main-nav {
-	font-size: 16px;	
+	font-size: 18px;
+    color: #444;
+    font-weight: bold;
 }
 
 .main-nav li:hover .drop-down{
@@ -188,6 +195,7 @@ nav ul li a:hover {
 .secundary-nav{
 	font-size: 14px;
     text-align: right;
+    color: #444;
 }
 
 .search-icon{
@@ -369,8 +377,8 @@ nav ul li a:hover {
 
 /*side animation*/
 .side_animation {
-    background-color: #cc6220;
-    color: #cc6220;
+    background: url(../img/animat.jpg) no-repeat 20% 0%;
+    background-size: 450px 300px;
 }
 
 .text_animation {
@@ -409,7 +417,9 @@ nav ul li a:hover {
 
 /*side web*/
 .side_web {
-    background-color: #922716;
+    background: url(../img/web.jpg) no-repeat 50% 0%;
+    background-size: 450px 300px;
+
 }
 
 .text_web {
@@ -441,7 +451,8 @@ nav ul li a:hover {
 
 /*side post*/
 .side_post {
-    background-color: #819535;
+    background: url(../img/post.jpg) no-repeat 10% 0%;
+    background-size: 450px 300px;
 }
 
 .text_post {
@@ -580,20 +591,19 @@ nav ul li a:hover {
 }
 
 .read_more {
-    color: #fff;
+    color: #00c9ed;
     font-family: 'quicksandbold';
-    text-decoration-line: underline;
-    text-decoration-color: #00c9ed;
-    border-bottom: 2px solid #00c9ed;
+    font-size: 0.9rem;
 }
 
 .read_more:hover {
     color: #00c9ed;
-    -webkit-transition: all 0.3s;
+    border-bottom: 2px solid #00c9ed;
+/*    -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: all 0.3s;*/
 }
 
 /* =========== Free Courses =========== */
